@@ -1,0 +1,533 @@
+{
+    "os": "Linux-5.15.0-46-generic-x86_64-with-glibc2.31",
+    "python": "3.10.13",
+    "heartbeatAt": "2023-12-19T09:34:33.191848",
+    "startedAt": "2023-12-19T09:34:33.099387",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--model_name",
+        "flan_t5_base",
+        "--model_path",
+        "/mnt/ai2lab/weishao4/programs/InterpretableKGC/pretrained_weights/FLAN-T5-base",
+        "--data_path",
+        "/mnt/ai2lab/weishao4/programs/InterpretableKGC/data/wizard_of_wikipedia/hf_data",
+        "--dataset_name",
+        "wizard_of_wikipedia",
+        "--output_dir",
+        "/mnt/ai2lab/weishao4/programs/InterpretableKGC/codes/kgc_model/saved_checkpoints/wizard_of_wikipedia_flan_t5_base",
+        "--evaluation_strategy",
+        "steps",
+        "--optim",
+        "adamw_torch",
+        "--learning_rate",
+        "1e-4",
+        "--log_level",
+        "warning",
+        "--log_level_replica",
+        "error",
+        "--per_device_train_batch_size",
+        "64",
+        "--per_device_eval_batch_size",
+        "32",
+        "--weight_decay",
+        "1e-2",
+        "--save_total_limit",
+        "3",
+        "--max_steps",
+        "10000",
+        "--metric_for_best_model",
+        "eval_loss",
+        "--load_best_model_at_end",
+        "True",
+        "--generation_max_length",
+        "128",
+        "--predict_with_generate",
+        "True",
+        "--logging_steps",
+        "20",
+        "--eval_steps",
+        "100",
+        "--save_steps",
+        "100",
+        "--gradient_accumulation_steps",
+        "2",
+        "--bf16",
+        "True",
+        "--report_to",
+        "wandb",
+        "--group_by_length",
+        "True",
+        "--gradient_checkpointing",
+        "True",
+        "--run_name",
+        "flan_t5_base_wizard_of_wikipedia_1e-4_64_2_"
+    ],
+    "state": "running",
+    "program": "/mnt/ai2lab/weishao4/programs/InterpretableKGC/codes/kgc_model/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "codes/kgc_model/train.py",
+    "git": {
+        "remote": "https://github.com/visionshao/InterpretableKGC.git",
+        "commit": "027a2c494f85c59c869dab887c0893108c84efce"
+    },
+    "email": "1600016634@pku.edu.cn",
+    "root": "/mnt/ai2lab/weishao4/programs/InterpretableKGC",
+    "host": "ecs-58892870",
+    "username": "weishao4",
+    "executable": "/mnt/ai2lab/weishao4/anaconda3/envs/LLM4MT/bin/python",
+    "cpu_count": 40,
+    "cpu_count_logical": 80,
+    "cpu_freq": {
+        "current": 3000.282999999997,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.283,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 117.99541473388672,
+            "used": 82.4713020324707
+        }
+    },
+    "gpu": "NVIDIA A100-PCIE-40GB",
+    "gpu_count": 8,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A100-PCIE-40GB",
+            "memory_total": 42949672960
+        },
+        {
+            "name": "NVIDIA A100-PCIE-40GB",
+            "memory_total": 42949672960
+        },
+        {
+            "name": "NVIDIA A100-PCIE-40GB",
+            "memory_total": 42949672960
+        },
+        {
+            "name": "NVIDIA A100-PCIE-40GB",
+            "memory_total": 42949672960
+        },
+        {
+            "name": "NVIDIA A100-PCIE-40GB",
+            "memory_total": 42949672960
+        },
+        {
+            "name": "NVIDIA A100-PCIE-40GB",
+            "memory_total": 42949672960
+        },
+        {
+            "name": "NVIDIA A100-PCIE-40GB",
+            "memory_total": 42949672960
+        },
+        {
+            "name": "NVIDIA A100-PCIE-40GB",
+            "memory_total": 42949672960
+        }
+    ],
+    "memory": {
+        "total": 629.8776321411133
+    }
+}

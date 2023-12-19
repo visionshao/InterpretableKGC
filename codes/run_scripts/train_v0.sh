@@ -22,11 +22,13 @@ save_steps=100
 evaluation_strategy=steps
 gradient_accumulation_steps=2
 # metric_for_best_model=bleu
+metric_for_best_model=eval_loss
+load_best_model_at_end=True
 # greater_is_better=True
 gradient_checkpointing=True
 group_by_length=True
 bf16=True
-report_to=None
+report_to=wandb
 
 gpu_num=2
 
@@ -47,6 +49,8 @@ torchrun --nproc_per_node $gpu_num train.py \
     --weight_decay $weight_decay \
     --save_total_limit $save_total_limit \
     --max_steps $max_steps \
+    --metric_for_best_model $metric_for_best_model \
+    --load_best_model_at_end $load_best_model_at_end \
     --generation_max_length $gen_len \
     --predict_with_generate $pred_w_gen \
     --logging_steps $logging_steps \
@@ -54,10 +58,11 @@ torchrun --nproc_per_node $gpu_num train.py \
     --save_steps $save_steps \
     --gradient_accumulation_steps $gradient_accumulation_steps \
     --bf16 $bf16 \
+    --report_to $report_to \
     --group_by_length $group_by_length \
     --gradient_checkpointing $gradient_checkpointing \
     --run_name ${model_name}_${dataset_name}_${lr}_${train_bs}_${gradient_accumulation_steps}_${num_epochs}
 
 # wandb sync /mnt/ai2lab/weishao4/programs/InterpretableKGC/codes/kgc_model/wandb/latest-run
 
-    # --report_to $report_to \
+    
