@@ -4,11 +4,11 @@
 
 The related codes are saved in kgc_model/train.py
 
-'''
+```
 cd /mnt/ai2lab/weishao4/programs/InterpretableKGC/codes/run_scripts
 
 bash train_v0.sh
-'''
+```
 
 The checkpoint will be saved in kgc_model/saved_checkpoint
 
